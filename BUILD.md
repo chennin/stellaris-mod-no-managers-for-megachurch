@@ -1,3 +1,7 @@
+# Preparing
+
+* Change variables at the top
+
 # Building
 
 Run: `./make.sh`
