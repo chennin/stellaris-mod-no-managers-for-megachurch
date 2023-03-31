@@ -2,8 +2,10 @@
 set -euo pipefail
 #set -x
 
-MOD_NAME="No Managers For Megachurches"
+MOD_NAME="No Managers For MegaChurches"
 GAME_FILES="$HOME/stellaris-game/"
+# 2 = hidden, 0 = public
+VISIBLE=2
 lc_mod_name=$(echo $MOD_NAME | tr ' ' '-')
 
 SRCFILE="common/buildings/08_unity_buildings.txt"
@@ -21,3 +23,10 @@ while (<STDIN>) {
 ' >> "${DEST}"
 patch ${DEST} buildings.patch
 unix2dos -q "${DEST}"
+
+if [ ! -e steamcmd.txt ]; then cp steamcmd-template.txt steamcmd.txt; fi
+sed -i -e "s@\t\"contentfolder\"\t\t.*@\t\"contentfolder\"\t\t\"${PWD}/mod\"@" \
+       -e "s@\t\"previewfile\"\t\t.*@\t\"previewfile\"\t\t\"${PWD}/mod/thumbnail.png\"@" \
+       -e "s@\t\"visibility\"\t\t.*@\t\"visibility\"\t\t\"${VISIBLE}\"@" \
+       -e "s@\t\"title\"\t\t.*@\t\"title\"\t\t\"${MOD_NAME}\"@" \
+     steamcmd.txt

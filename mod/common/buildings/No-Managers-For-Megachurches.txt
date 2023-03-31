@@ -1,4 +1,4 @@
-# No Managers For Megachurches
+# No Managers For MegaChurches
 building_temple = {
 	base_buildtime = @b1_time
 
