@@ -21,7 +21,7 @@
 set -euo pipefail
 #set -x
 
-MOD_NAME="No Managers For MegaChurches"
+MOD_NAME="Temple Manager Repellent"
 GAME_FILES="$HOME/stellaris-game/"
 # 3 = unlisted, 2 = hidden, 1 = friends, 0 = public
 VISIBLE=3
