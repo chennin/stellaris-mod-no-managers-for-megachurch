@@ -38,7 +38,7 @@ mkdir -p $(dirname "${DEST}")
 echo -e -n "# ${MOD_NAME}\r\n" > "${DEST}"
 < "${GAME_FILES}/${SRCFILE}" perl -ane '
 while (<STDIN>) {
-  if (/^(building_temple|building_holotemple|building_sacred_nexus|building_sacrificial_temple_)/ ... /^}/) {
+  if (/^(building_temple|building_holotemple|building_sacred_nexus|building_sacrificial_temple_|building_league_offices)/ ... /^}/) {
     print;
   }
 }
