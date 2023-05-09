@@ -24,7 +24,7 @@ set -euo pipefail
 MOD_NAME="Temple Manager Repellent"
 GAME_FILES="$HOME/stellaris-game/"
 # 3 = unlisted, 2 = hidden, 1 = friends, 0 = public
-VISIBLE=3
+VISIBLE=0
 # Vanilla source, not the full path
 SRCFILE="common/buildings/08_unity_buildings.txt"
 
