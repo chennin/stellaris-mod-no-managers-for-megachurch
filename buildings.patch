@@ -1,5 +1,5 @@
---- mod/common/buildings/Temple-Manager-Repellent.txt	2023-09-12 12:30:00.621240100 -0400
-+++ mod/common/buildings/Temple-Manager-Repellent.txt.work	2023-09-12 12:29:59.389756100 -0400
+--- mod/common/buildings/Temple-Manager-Repellent.txt	2023-09-12 12:48:03.406518800 -0400
++++ mod/common/buildings/Temple-Manager-Repellent.txt.work	2023-09-12 12:48:00.241459400 -0400
 @@ -79,21 +79,10 @@
  				is_worker_coop_empire = no
  			}
@@ -69,7 +69,7 @@
  
  	triggered_planet_modifier = {
  		potential = {
-@@ -578,21 +545,10 @@
+@@ -578,21 +545,11 @@
  				is_worker_coop_empire = no
  			}
  		}
@@ -85,14 +85,15 @@
 -				is_megacorp = yes
 -				is_worker_coop_empire = no
 -			}
-+			job_priest_add = 2
++			job_death_priest_add = 1
++			job_mortal_initiate_add = 1
  		}
 -		text = job_manager_effect_desc
  	}
  
  	triggered_planet_modifier = {
  		potential = {
-@@ -706,21 +662,10 @@
+@@ -706,21 +663,11 @@
  				is_worker_coop_empire = no
  			}
  		}
@@ -108,14 +109,15 @@
 -				is_megacorp = yes
 -				is_worker_coop_empire = no
 -			}
-+			job_priest_add = 2
++			job_death_priest_add = 1
++			job_mortal_initiate_add = 1
  		}
 -		text = job_manager_effect_desc
  	}
  
  	triggered_planet_modifier = {
  		potential = {
-@@ -890,10 +835,9 @@
+@@ -890,10 +837,9 @@
  				is_spiritualist = yes
  			}
  		}
@@ -127,7 +129,7 @@
  	}
  
  	triggered_planet_modifier = {
-@@ -1004,5 +948,5 @@
+@@ -1004,5 +950,5 @@
  
  	prerequisites = {
  		"tech_secrets_league"

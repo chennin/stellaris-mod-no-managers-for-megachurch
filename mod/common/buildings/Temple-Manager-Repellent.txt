@@ -546,7 +546,8 @@ building_sacrificial_temple_2 = {
 			}
 		}
 		modifier = {
-			job_priest_add = 2
+			job_death_priest_add = 1
+			job_mortal_initiate_add = 1
 		}
 	}
 
@@ -663,7 +664,8 @@ building_sacrificial_temple_3 = {
 			}
 		}
 		modifier = {
-			job_priest_add = 2
+			job_death_priest_add = 1
+			job_mortal_initiate_add = 1
 		}
 	}
 

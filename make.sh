@@ -43,6 +43,7 @@ while (<STDIN>) {
   }
 }
 ' >> "${DEST}"
+#exit
 patch ${DEST} buildings.patch
 unix2dos -q "${DEST}"
 
