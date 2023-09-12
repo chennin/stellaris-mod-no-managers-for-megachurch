@@ -1,2 +1,4 @@
 steamcmd.txt
 tmp
+*.orig
+*.rej

@@ -1,6 +1,6 @@
-name="No Managers For Megachurches"
+name="Temple Manager Repellent"
 version="1"
-supported_version="3.8.*"
+supported_version="3.9.*"
 tags={
 	"Buildings"
 }

@@ -1,26 +1,10 @@
---- tmp/Temple-Manager-Repellent.txt	2023-04-02 20:40:25.368882400 -0400
-+++ mod/common/buildings/Temple-Manager-Repellent.txt	2023-04-02 20:40:49.509890600 -0400
-@@ -59,9 +59,8 @@
- 
- 	triggered_planet_modifier = {
- 		potential = {
- 			exists = owner
--			owner = { is_megacorp = no }
+--- mod/common/buildings/Temple-Manager-Repellent.txt	2023-09-12 12:30:00.621240100 -0400
++++ mod/common/buildings/Temple-Manager-Repellent.txt.work	2023-09-12 12:29:59.389756100 -0400
+@@ -79,21 +79,10 @@
+ 				is_worker_coop_empire = no
+ 			}
  		}
  		modifier = {
- 			job_priest_add = 1
- 		}
-@@ -70,26 +69,8 @@
- 	triggered_desc = {
- 		text = job_priest_effect_desc
- 	}
- 
--	triggered_planet_modifier = {
--		potential = {
--			exists = owner
--			owner = { is_megacorp = yes }
--		}
--		modifier = {
 -			job_manager_add = 1
 -		}
 -	}
@@ -28,36 +12,22 @@
 -	triggered_desc = {
 -		trigger = {
 -			exists = owner
--			owner = { is_megacorp = yes }
--		}
+-			owner = {
+-				is_megacorp = yes
+-				is_worker_coop_empire = no
+-			}
++			job_priest_add = 1
+ 		}
 -		text = job_manager_effect_desc
--	}
--
- 	upgrades = {
- 		building_holotemple
  	}
- 
-@@ -172,9 +153,8 @@
  
  	triggered_planet_modifier = {
  		potential = {
- 			exists = owner
--			owner = { is_megacorp = no }
+@@ -222,21 +211,10 @@
+ 				is_worker_coop_empire = no
+ 			}
  		}
  		modifier = {
- 			job_priest_add = 2
- 		}
-@@ -183,26 +163,8 @@
- 	triggered_desc = {
- 		text = job_priest_effect_desc
- 	}
- 
--	triggered_planet_modifier = {
--		potential = {
--			exists = owner
--			owner = { is_megacorp = yes }
--		}
--		modifier = {
 -			job_manager_add = 2
 -		}
 -	}
@@ -65,36 +35,22 @@
 -	triggered_desc = {
 -		trigger = {
 -			exists = owner
--			owner = { is_megacorp = yes }
--		}
+-			owner = {
+-				is_megacorp = yes
+-				is_worker_coop_empire = no
+-			}
++			job_priest_add = 2
+ 		}
 -		text = job_manager_effect_desc
--	}
--
- 	upgrades = {
- 		building_sacred_nexus
  	}
- 
-@@ -293,9 +255,8 @@
  
  	triggered_planet_modifier = {
  		potential = {
- 			exists = owner
--			owner = { is_megacorp = no }
+@@ -373,21 +351,10 @@
+ 				is_worker_coop_empire = no
+ 			}
  		}
  		modifier = {
- 			job_priest_add = 3
- 		}
-@@ -304,26 +265,8 @@
- 	triggered_desc = {
- 		text = job_priest_effect_desc
- 	}
- 
--	triggered_planet_modifier = {
--		potential = {
--			exists = owner
--			owner = { is_megacorp = yes }
--		}
--		modifier = {
 -			job_manager_add = 3
 -		}
 -	}
@@ -102,34 +58,22 @@
 -	triggered_desc = {
 -		trigger = {
 -			exists = owner
--			owner = { is_megacorp = yes }
--		}
+-			owner = {
+-				is_megacorp = yes
+-				is_worker_coop_empire = no
+-			}
++			job_priest_add = 3
+ 		}
 -		text = job_manager_effect_desc
--	}
--
- 	triggered_desc = {
- 		trigger = {
- 			exists = owner.federation
- 			owner.federation = { has_federation_perk = all_the_priests_2 }
-@@ -471,34 +414,15 @@
+ 	}
  
  	triggered_planet_modifier = {
  		potential = {
- 			exists = owner
--			owner = { is_megacorp = no }
+@@ -578,21 +545,10 @@
+ 				is_worker_coop_empire = no
+ 			}
  		}
  		modifier = {
- 			job_death_priest_add = 1
- 			job_mortal_initiate_add = 1
- 		}
- 	}
- 
--	triggered_planet_modifier = {
--		potential = {
--			exists = owner
--			owner = { is_megacorp = yes }
--		}
--		modifier = {
 -			job_manager_add = 2
 -		}
 -	}
@@ -137,34 +81,22 @@
 -	triggered_desc = {
 -		trigger = {
 -			exists = owner
--			owner = { is_megacorp = yes }
--		}
+-			owner = {
+-				is_megacorp = yes
+-				is_worker_coop_empire = no
+-			}
++			job_priest_add = 2
+ 		}
 -		text = job_manager_effect_desc
--	}
--
- 	prerequisites = {
- 		"tech_holographic_rituals"
  	}
- 
-@@ -569,9 +493,8 @@
  
  	triggered_planet_modifier = {
  		potential = {
- 			exists = owner
--			owner = { is_megacorp = no }
+@@ -706,21 +662,10 @@
+ 				is_worker_coop_empire = no
+ 			}
  		}
  		modifier = {
- 			job_death_priest_add = 1
- 			job_mortal_initiate_add = 1
-@@ -579,26 +502,8 @@
- 	}
- 
- 	triggered_planet_modifier = {
- 		potential = {
--			exists = owner
--			owner = { is_megacorp = yes }
--		}
--		modifier = {
 -			job_manager_add = 2
 -		}
 -	}
@@ -172,18 +104,18 @@
 -	triggered_desc = {
 -		trigger = {
 -			exists = owner
--			owner = { is_megacorp = yes }
--		}
--		text = job_manager_effect_desc
--	}
--
--	triggered_planet_modifier = {
--		potential = {
- 			exists = owner.federation
- 			owner.federation = { has_federation_perk = all_the_priests_2 }
+-			owner = {
+-				is_megacorp = yes
+-				is_worker_coop_empire = no
+-			}
++			job_priest_add = 2
  		}
- 		job_high_priest_add = 1
-@@ -723,10 +628,9 @@
+-		text = job_manager_effect_desc
+ 	}
+ 
+ 	triggered_planet_modifier = {
+ 		potential = {
+@@ -890,10 +835,9 @@
  				is_spiritualist = yes
  			}
  		}
@@ -195,7 +127,7 @@
  	}
  
  	triggered_planet_modifier = {
-@@ -802,5 +706,5 @@
+@@ -1004,5 +948,5 @@
  
  	prerequisites = {
  		"tech_secrets_league"
